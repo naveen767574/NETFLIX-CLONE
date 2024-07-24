@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="fixed top-0 left-0 w-full h-screen overflow-hidden ">
+    <video loop autoplay muted class="absolute top-0 left-0 transform  w-full h-full object-cover">
+      <source src="{{url_for('static',filename='images/'+video_filename)}}"
+      type="video/mp4">
+  </div>
+  <div class="relative z-20 text-gray-600 flex justify-around mt-8 image-section">
+    <div class="w-300 cursor-pointer flex flex-col items-center justify-center">
+      <img src="../static/images/witcher.jpg" class="w-1/2 border-2 border-red-500 ">
+      <h2 class="text-center text-3xl mt-5 mb-5">Stranger Things</h2>
+      <p class="text-gray-600">About :When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+    </div>
+    <div class="w-300 cursor-pointer flex flex-col items-center justify-center">
+      <img src="../static/images/stranger.jpg" class="w-1/2 border-2 border-red-500">
+      <h2 class="text-center text-3xl mt-5 mb-5">The Witcher</h2>
+      <p class="text-gray-600">About :Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.</p>
+    </div>
+  </div>
+</body>
+</html>
